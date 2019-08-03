@@ -46,18 +46,24 @@ button {
   font-weight: bold;
 }
 
-figure {
+.feature-wrapper {
   margin-bottom: 30px;
+  max-width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.article-header img {
+  width: 100%;
 }
 
 figcaption {
   color: rgb(126, 126, 126);
   font-size: 13px;
   position: relative;
-  left: -20%;
   line-height: 1.4;
   margin-top: 4px;
-  width: 140%;
+  max-width: 70vw;
 }
 
 figcaption span {
@@ -68,15 +74,9 @@ figcaption span {
 }
 
 .container {
-  width: 50vw;
+  width: 30%;
   margin-left: auto;
   margin-right: auto;
-}
-
-.img-wrapper {
-  position: relative;
-  left: -20%;
-  width: 80vw;
 }
 
 .header-nav {
@@ -150,36 +150,68 @@ figcaption span {
   font-size: 15px;
 }
 
+.article-img {
+  position: relative;
+  left: -40%;
+}
 .section-inflation {
+  position: relative;
   width: 140%;
-  height: 800px;
-  transform: translateX(-10%);
-  background-image: url("/assets/inflation-720.png");
-  background-color: aqua;
-  background-position: 0 140px;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  margin-bottom: 250px;
+  left: -20%;
+  margin-bottom: 30px;
 }
 
-.section-inflation .row {
+.inflation-container {
+  width: 945px;
+  overflow: hidden;
+  position: relative;
+}
+
+.inflation-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.inflation-container .row {
   display: flex;
-  line-height: 1.3;
-  font-family: Helvetica, sans-serif;
-  font-size: 12px;
-}
-.section-inflation .row:nth-of-type(1) {
-  position: relative;
-  top: 125px;
-  background: greenyellow;
+  max-width: 100%;
 }
 
-.section-inflation .row:nth-of-type(2) {
-  position: relative;
-  top: 280px;
+.inflation-container .row:nth-of-type(1) {
+  position: absolute;
+  top: 20%;
 }
 
-.section-inflation p:last-of-type {
-  position: relative;
-  top: 325px;
+.inflation-container .row:nth-of-type(2) {
+  position: absolute;
+  bottom: 11%;
+}
+
+.inflation-container .row p {
+  margin: 0 20px;
+}
+
+.inflation-container .row > p {
+  margin-left: 0;
+}
+.inflation-container .row p:last-child {
+  margin-right: 0;
+}
+
+.section-inflation > p:last-child::before {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 1.5px;
+  position: absolute;
+  bottom: 4%;
+  background: rgba(70, 70, 70, 0.9);
+}
+.inflation-container p {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.inflation-subheadings {
+  font-weight: 600;
+  padding-right: 13px;
 }
