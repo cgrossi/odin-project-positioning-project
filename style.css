@@ -308,3 +308,29 @@ figcaption span {
   padding: 25px 0 15px 0;
   font-family: Helvetica, sans-serif;
 }
+
+footer {
+  padding-top: 35px;
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.links-container {
+  display: flex;
+}
+
+.links-container span {
+  margin: 5px;
+  color: rgb(32, 32, 32);
+}
+
+.links-container .f-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.popular-item {
+  width: 100%;
+}
